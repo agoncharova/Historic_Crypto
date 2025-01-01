@@ -14,7 +14,24 @@ The HistoricalData class returns all attributes (Open, Close, High, Low, Volume)
 
 # Installation
 
-From Python:
+Conda install:
+```
+conda build .
+conda install --use-local historic_crypto
+```
+
+Conda uninstall:
+```
+conda-build purge
+conda remove historic_crypto
+```
+
+An alternative, local install, incompatible with Conda:
+```
+python setup.py install --user
+```
+
+An old version from PyPi:
 ```python
 pip install Historic-Crypto
 from Historic_Crypto import HistoricalData

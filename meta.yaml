@@ -1,0 +1,34 @@
+package:
+  name: historic_crypto
+  version: "0.1.7"
+
+source:
+  path: .
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install ."
+
+requirements:
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - pandas
+    - requests
+
+test:
+  imports:
+    - Historic_Crypto
+
+about:
+  home: https://github.com/agoncharova/historic_crypto
+  license: MIT
+  license_file: LICENSE
+  summary: A package for historical cryptocurrency data.
+
+extra:
+  recipe-maintainers:
+    - David-Woroniuk
+
